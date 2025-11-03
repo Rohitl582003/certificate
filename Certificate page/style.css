@@ -1,0 +1,249 @@
+:root {
+  --eco-green: #000000;   /* soft eco leaf green */
+  --eco-dark: #196815;
+  --bg: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: #130303;
+  font-size: 18px; /* slightly increased */
+  scroll-behavior: smooth;
+}
+
+/* ---------- Header ---------- */
+.simple-header {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo {
+  width: 90px;
+  height: auto;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--eco-dark);
+}
+
+.header-text p {
+  margin: 5px 0 0;
+  font-size: 1.1rem;
+  color: var(--eco-green);
+  font-weight: 500;
+}
+
+/* ---------- Certificates ---------- */
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  text-align: center;
+}
+
+.certificates h2 {
+  font-size: 1.9rem;
+  color: var(--eco-dark);
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.certificates .sub {
+  color: #0a0a0a;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+.cert-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.cert-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: var(--eco-dark);
+}
+
+.cert-card p {
+  font-size: 1rem;
+  color: #252525;
+  margin-bottom: 10px;
+}
+
+.cert-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+}
+
+/* ---------- Scrollable Two-page Certificate ---------- */
+.scroll-container {
+  max-height: 450px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* hides scrollbar in Firefox */
+}
+.scroll-container::-webkit-scrollbar {
+  display: none; /* hides scrollbar in Chrome/Edge/Safari */
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  padding: 50px 20px;
+  background: #e9f5ec;
+  margin-top: 40px;
+}
+
+.footer img {
+  width: 75px;
+  height: auto;
+}
+
+.footer p {
+  max-width: 800px;
+  margin: 15px auto;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.website-link {
+  display: inline-block;
+  background: var(--eco-green);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.website-link:hover {
+  background: var(--eco-dark);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Certified Quality Section */
+.quality-section {
+  background-color: #f4f9f4; /* soft eco-friendly light green */
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin: 50px auto;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.quality-content {
+  text-align: center;
+  max-width: 900px;
+}
+
+.quality-content h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #196815; /* dark eco green */
+  margin-bottom: 15px;
+}
+
+.quality-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #4b6350;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 certificates per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .cert-grid {
+    grid-template-columns: 1fr; /* 1 certificate per row on phones */
+  }
+
+  .cert-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-logo {
+    width: 80px;
+    margin-bottom: 10px;
+  }
+
+  .header-text h1 {
+    font-size: 1.4rem;
+  }
+
+  .header-text p {
+    font-size: 0.9rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .quality-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .quality-content p {
+    font-size: 0.95rem;
+  }
+}
