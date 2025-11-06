@@ -1,9 +1,0 @@
-{
-  "name": "certificate-page",
-  "version": "1.0.0",
-  "description": "Certificates verification website",
-  "scripts": {
-    "start": "echo 'Static site — no build step required'"
-  },
-  "license": "ISC"
-}
