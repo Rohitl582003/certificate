@@ -1,12 +1,9 @@
 {
   "name": "certificate-page",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Certificates verification website",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "echo 'Static site — no build step required'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "ISC"
 }
